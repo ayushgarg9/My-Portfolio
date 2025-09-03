@@ -49,6 +49,9 @@ section, .about, .tech, .contact {
   opacity: 1;
   transform: translateY(0);
 }
+.left {
+    margin: 150px;
+}
 
 .about {
     background-color: rgb(145, 255, 145);
@@ -56,8 +59,6 @@ section, .about, .tech, .contact {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
-    margin-top: 120px;
     align-items: center;
     justify-content: center;
     border: none;
@@ -86,6 +87,7 @@ section, .about, .tech, .contact {
   from { transform: translateY(0px); }
   to { transform: translateY(40px); }
 }
+
 .intro {
   font-size: 80px;
   font-weight: bold;
