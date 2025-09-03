@@ -1,0 +1,192 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(186, 252, 186);
+    height: 2000px;
+    font-family: Poppins, sans-serif;
+}
+
+.resume-btn:hover {
+  background: darkgreen;
+  box-shadow: 0 0 15px seagreen;
+}
+
+header {
+  background-color: rgb(145, 255, 145);
+  width: 800px;
+  height: 60px;
+  margin-left: 350px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  background-color: rgb(64, 128, 64);
+  padding: 12px 36px;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+header a:hover {
+  background: darkgreen;
+  box-shadow: 0 0 10px rgba(0, 100, 0, 0.6);
+}
+/* Fade-in animation for sections */
+section, .about, .tech, .contact {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+/* When visible on screen */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about {
+    background-color: rgb(145, 255, 145);
+    color: rgb(37, 57, 37);
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.30s;
+    margin-bottom: 170px;
+}
+.about:hover {
+    transform: scale3d(1.05,1.05,1.05);
+}
+.design-blob {
+  position: fixed;
+  top: 150px;
+  right: 80px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle at 30% 30%, #00ff99, #009966);
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: float 6s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes float {
+  from { transform: translateY(0px); }
+  to { transform: translateY(40px); }
+}
+.intro {
+  font-size: 50px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid seagreen;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.info {
+    font-size: 35px;
+    margin-left: 20px;
+}
+.tech {
+    background-color: rgb(145, 255, 145);
+    color: rgb(37, 57, 37);;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.30s;
+    margin-bottom: 170px;
+}
+.skill {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.tech:hover {
+    transform: scale3d(1.05,1.05,1.05);
+}
+.projects {
+  background-color: rgb(145, 255, 145);
+  color: rgb(37, 57, 37);;
+  width: 600px;
+  padding: 30px;
+  margin-left: 120px;
+  margin-top: 120px;
+  border-radius: 50px;
+  transition: transform 0.3s;
+  margin-bottom: 170px;
+}
+
+.projects:hover {
+  transform: scale3d(1.05,1.05,1.05);
+}
+
+.projects h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-card {
+  background: white;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.contact {
+    background-color: rgb(145, 255, 145);
+    color: rgb(37, 57, 37);;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.30s;
+    margin-bottom: 170px;
+}
+.contact p {
+    font-size:  25px;
+}
+.contact:hover {
+    transform: scale3d(1.05,1.05,1.05);
+}

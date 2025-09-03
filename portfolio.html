@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ayush Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <a href="#about">About me</a>
+            <a href="#tech">Tech stack</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact me</a>
+            <a href="resume.pdf" download class="resume-btn">Download Portfolio</a>
+        </header>
+        <div class="design-blob"></div>
+        <div id="about" class="about">
+            <div class="intro">Hi My Name is Ayush</div>
+            <div class="info">I am a second year undergrad, Frontend developer</div>
+        </div>
+
+        <div id="tech" class="tech">
+            
+
+            <ul class="skill">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PYTHON</li>
+            <li>CPP</li>
+            </ul>
+
+        </div>
+        <div id="projects" class="projects">
+            <div class="card">
+                <h3>YouTube Clone</h3>
+                <p>Built with HTML, CSS, JS</p>
+            </div>
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal site</p>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <p><strong>Email:</strong> 
+                <a href="mailto:ayushgarg9707@gmail.com">ayushgarg9707@gmail.com</a>
+            </p>
+
+            <p><strong>Phone:</strong> +91 9588791911</p>
+
+            <p><strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/ayush-garg-799265335/" target="_blank">My LinkedIn</a>
+            </p>
+
+            <p><strong>GitHub:</strong> 
+                <a href="https://github.com/ayushgarg9" target="_blank">My GitHub</a>
+            </p>
+        </div>
+        <script>
+            const sections = document.querySelectorAll('.about, .tech, .contact');
+
+            window.addEventListener('scroll', () => {
+                sections.forEach(sec => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    sec.classList.add('show');
+                }
+                });
+            });
+        </script>
+
+
+    </body>
+</html>
