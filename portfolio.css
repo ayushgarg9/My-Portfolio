@@ -144,6 +144,9 @@ section, .about, .tech, .contact {
   border-radius: 50px;
   transition: transform 0.3s;
   margin-bottom: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects:hover {
@@ -151,8 +154,8 @@ section, .about, .tech, .contact {
 }
 
 .projects h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 70px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
