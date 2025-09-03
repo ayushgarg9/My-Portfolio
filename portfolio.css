@@ -2,6 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(186, 252, 186);
     height: 2000px;
     font-family: Poppins, sans-serif;
@@ -14,9 +17,8 @@ body {
 
 header {
   background-color: rgb(145, 255, 145);
-  width: 800px;
-  height: 60px;
-  margin-left: 350px;
+  flex: 1;
+  max-width: 900px;
   border-radius: 25px;
   display: flex;
   justify-content: space-around;
@@ -51,8 +53,7 @@ section, .about, .tech, .contact {
 .about {
     background-color: rgb(145, 255, 145);
     color: rgb(37, 57, 37);
-    height: 400px;
-    width: 600px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     margin-left: 120px;
@@ -63,6 +64,7 @@ section, .about, .tech, .contact {
     border-radius: 50px;
     transition: transform 0.30s;
     margin-bottom: 170px;
+    padding: 120px;
 }
 .about:hover {
     transform: scale3d(1.05,1.05,1.05);
@@ -85,12 +87,13 @@ section, .about, .tech, .contact {
   to { transform: translateY(40px); }
 }
 .intro {
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid seagreen;
   width: 0;
+  margin-bottom: 40px;
   animation: typing 4s steps(30, end) forwards, blink 0.7s step-end infinite;
 }
 
@@ -105,13 +108,11 @@ section, .about, .tech, .contact {
 
 .info {
     font-size: 35px;
-    margin-left: 20px;
 }
 .tech {
     background-color: rgb(145, 255, 145);
     color: rgb(37, 57, 37);;
-    height: 400px;
-    width: 600px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     margin-left: 120px;
@@ -134,7 +135,7 @@ section, .about, .tech, .contact {
 .projects {
   background-color: rgb(145, 255, 145);
   color: rgb(37, 57, 37);;
-  width: 600px;
+  flex: 1;
   padding: 30px;
   margin-left: 120px;
   margin-top: 120px;
@@ -171,8 +172,7 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 .contact {
     background-color: rgb(145, 255, 145);
     color: rgb(37, 57, 37);;
-    height: 400px;
-    width: 600px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     margin-left: 120px;
